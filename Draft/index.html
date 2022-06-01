@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot News</title>
     <!--Links to css-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
@@ -27,16 +29,26 @@
     </header>
 
     <!--Main content-->
-    <div class="all-news">
-        <a href="#"><img class="news-1" src="#" alt="Image News 1"></a>
-        <a href="#"><img class="news-2" src="#" alt="Image News 2"></a>
-        <a href="#"><img class="news-3" src="#" alt="Image News 3"></a>
-        <a href="#"><img class="news-4" src="#" alt="Image News 4"></a>
-        <a href="#"><img class="news-5" src="#" alt="Image News 5"></a>
-        <a href="#"><img class="news-6" src="#" alt="Image News 6"></a>
-        <a href="#"><img class="news-7" src="#" alt="Image News 7"></a>
-        <a href="#"><img class="news-8" src="#" alt="Image News 8"></a>
-    </div>
+    <main class="flex-row justify-space-between">
+        <div class="all-news">
+            <div class="col-12 col-md-4">
+
+                <div class="card">
+                <h3 class="card-header text-uppercase">Search By keyword</h3>
+                <form id="user-form" class="card-body">
+                    <label class="form-label" for="keyword">Keyword</label>
+                    <input name="keyword" id="keyword" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Search</button>
+                </form>
+                </div>
+            </div>
+        
+            <div class="col-12 col-md-8">
+                <h2 class="subtitle">Showing top 10 news for the search: <span id="news-search-term"></span></h2>
+                <div id="news-container" class="list-group"></div>
+            </div>
+        </div>
+    </main>
 
     <!--Footer-->
     <footer>
@@ -51,5 +63,5 @@
 </body>
 
 <!--Js script links-->
-
+<script src="./assets/test.js"></script>
 </html>
