@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-News</title>
 <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-<!-- M icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 <!-- Actual Materialize -->
 <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- CSS flickity-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<!-- M icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--CSS link  -->
 <link rel="stylesheet" href="./assets/style.css">
-
 </head>
 <body>
     
@@ -38,6 +36,57 @@
                 </div><!--modified by Javier-->
             </nav><!--modified by Javier-->
         <div class="col s4 modifiedcustom2"><!--modified by Javier-->
+
+</section>
+
+<!-- Nav bar -->
+<div class="navbar-main">
+<section class="fnavbar">
+    <nav class="nav-fixed">
+       <div class="nav-wrapper">
+        <a href="#" class="brand-logo">One World-News</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+<div class="navbar-right">      
+  <!-- Search box -->
+          <ul> 
+            <li>
+              <form class="container3">
+                <div>
+                  <input type="search" id="mySearch" name="q"
+                  placeholder="Search the site..." size="30">
+                  <button>Search</button>
+                </div>
+              </form>
+            </li>
+  <!-- Dropdown -->     
+
+            <li>
+             <a href="#"><span><i class="material-icons">expand_more</i></span>Dropdown▾</a>
+             <ul class="dropdown">
+              <li><a href="#">text1</a></li>
+              <li><a href="#">text2</a></li>
+              <li><a href="#">text3</a></li>
+              <li><a href="#">text4</a></li>
+             </ul>
+            </li>
+         <li><a href="#" onclick="toggleModal();"><span><i class="material-icons">home</i></span>Home</a></li>
+         <li><a href="#" onclick="toggleModal();"><span><i class="material-icons">business</i></span>Business</a></li>
+         <li><a href="#" onclick="toggleModal();"><span><i class="material-icons">work</i></span>Life & Work</a></li>
+         <li><a href="#" onclick="toggleModal();"><span><i class="material-icons">email</i></span>Contat us</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>  
+
+  <ul class="sidenav" id="mobile-demo">
+  <li><a href="#" onclick="toggleModal();">Home</a></li>
+  <li><a href="#" onclick="toggleModal();">Business</a></li>
+  <li><a href="#" onclick="toggleModal();">Life & Work</a></li>
+  <li></li><a href="#" onclick="toggleModal();">Contat us</a></li>
+  </ul>
+</section>
 
           <ul><!--modified by Javier-->
             <li><!--modified by Javier-->
@@ -83,14 +132,16 @@
 
 
 
-
 <section class="infomodal">
 </section>
+
 
 <!-- Text -->
 <section class="descrip">
   <div class="section white center">
     <h4 class="header">We are delivering the latest and more interesting news.</h4>
+
+
     <div class="row container center">
       <div class="col center l8 s12 text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -333,9 +384,9 @@
           <div class="col l6 s12">
             <h5 class="white-text">Social Media</h5>
             <ul>
-              <li><a href="#" class="grey-text">Facebook</a></li>
-              <li><a href="#" class="grey-text">Instagram</a></li>
-              <li><a href="#" class="grey-text">Twitter</a></li>
+              <li class="footer-li"><a href="#" class="grey-text">Facebook</a></li>
+              <li class="footer-li"><a href="#" class="grey-text">Instagram</a></li>
+              <li class="footer-li"><a href="#" class="grey-text">Twitter</a></li>
             </ul>
           </div>
         </div>
