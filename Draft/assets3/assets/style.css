@@ -1,4 +1,24 @@
 /* Navbar */
+/*modified by Javier*/
+.modifiedcustom{
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    
+}
+/*modified by Javier*/
+
+
+/*modified by Javier*/
+.modifiedcustom2{
+    padding: 0;
+    text-align: center;
+    
+}
+/*modified by Javier*/
+
 
 .nav-wrapper{
     background-color: #9B0000;
