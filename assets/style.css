@@ -71,7 +71,7 @@
     }
 
     .cell{
-        width: 5%;
+        width: 33%;
         height: 350px;
         margin:0 15px;
         overflow: hidden;
@@ -82,15 +82,39 @@
         padding-top:50px ;
         position: relative;
         text-align: center;
-        /* color: white; */
+        color: white;
         font-size: large;
     }
+    .main-carousel a{
+        color: #FFF;
+    }
 
+    .fin-carousel{
+        padding-top:50px ;
+        position: relative;
+        text-align: left;
+        color: black;
+        font-size:medium;
+       
+    }
+
+    .cell1{
+        width: 8%;
+        height: 200px;
+        margin:0 15px;
+        overflow: hidden;
+        border-radius: 8px;
+        display: inline-block;
+    }
 
 
 /* Card container */
     .fcards{
         padding-top: 100px;
+    }
+
+    .fcards-fin{
+        padding-top: 70px;
     }
 
 

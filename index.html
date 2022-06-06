@@ -10,10 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!-- Actual Materialize -->
-<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 <!-- CSS flickity-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -31,12 +33,12 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right">
          <!-- Search box -->
-          <ul style="cursor:grab;"> 
+          <ul> 
             <!-- <li>
               <input id="myInput" type="text" placeholder="Serach by keyword">
             </li> -->
             <li><a href="#" onclick="toggleModal();">Home</a></li>
-            <li><a href="#" onclick="toggleModal();">Finance</a></li>
+            <li><a href="financial.html" onclick="toggleModal();">Finance</a></li>
             <!-- Dropdown -->     
             <li>
               <a>Categories▾</a>
@@ -59,15 +61,68 @@
 <h3 style="padding-left:30px; padding-top:70px;">World At A Glance</h3>
 <hr>
 <div class="main-carousel" id="Highlights">
-    <div class="cell"><img class="car1-img" src="./assets/images/horizontal/image1.jpg"><div class="bottom-left car1-text">Bottom Left</div></div>
-    <div class="cell"><img class="car2-img" src="./assets/images/horizontal/image5.jpg"><div class="bottom-left car2-text">Bottom Left</div></div>
-    <div class="cell"><img class="car3-img" src="./assets/images/horizontal/image6.jpg"><div class="bottom-left car3-text">Bottom Left</div></div>
-    <div class="cell"><img class="car4-img" src="./assets/images/horizontal/image9.jpg"><div class="bottom-left car4-text">Bottom Left</div></div>
-    <div class="cell"><img class="car5-img" src="./assets/images/horizontal/image10.jpg"><div class="bottom-left car5-text">Bottom Left</div></div>
-    <div class="cell"><img class="car6-img" src="./assets/images/horizontal/image11.jpg"><div class="bottom-left car6-text">Bottom Left</div></div>
-    <div class="cell"><img class="car7-img" src="./assets/images/horizontal/image12.jpg"><div class="bottom-left car7-text">Bottom Left</div></div>
-    <div class="cell"><img class="car8-img" src="./assets/images/horizontal/image13.jpg"><div class="bottom-left car8-text">Bottom Left</div></div>
-    <div class="cell"><img class="car9-img" src="./assets/images/horizontal/image14.jpg"><div class="bottom-left car9-text">Bottom Left</div></div>
+    <div class="cell">
+      <a id="car1-link" target=”_blank”>
+        <img class="car1-img" src="./assets/images/horizontal/image1.jpg">
+        <div class="bottom-left car1-text"></div>
+      </a>
+    </div>
+
+    <div class="cell">
+      <a id="car2-link" target=”_blank”>
+        <img class="car2-img" src="./assets/images/horizontal/image5.jpg">
+        <div class="bottom-left car2-text"></div>
+      </a>
+    </div>
+
+    <div class="cell">
+      <a id="car3-link" target=”_blank”>
+        <img class="car3-img" src="./assets/images/horizontal/image6.jpg">
+        <div class="bottom-left car3-text"></div>
+    </a>
+  </div>
+
+    <div class="cell">
+      <a id="car4-link" target=”_blank”>
+        <img class="car4-img" src="./assets/images/horizontal/image9.jpg">
+        <div class="bottom-left car4-text"></div>
+      </a>
+    </div>
+
+    <div class="cell">
+      <a id="car5-link" target=”_blank”>
+        <img class="car5-img" src="./assets/images/horizontal/image10.jpg">
+        <div class="bottom-left car5-text"></div>
+      </a></div>
+
+    <div class="cell">
+      <a id="car6-link" target=”_blank”>
+        <img class="car6-img" src="./assets/images/horizontal/image11.jpg">
+        <div class="bottom-left car6-text"></div>
+      </a>
+    </div>
+
+    <div class="cell">
+      <a id="car7-link" target=”_blank”>
+        <img class="car7-img" src="./assets/images/horizontal/image12.jpg">
+        <div class="bottom-left car7-text"></div>
+      </a>
+    </div>
+
+    <div class="cell">
+      <a id="car8-link" target=”_blank”>
+        <img class="car8-img" src="./assets/images/horizontal/image13.jpg">
+        <div class="bottom-left car8-text"></div>
+      </a>
+    </div>
+
+    <div class="cell">
+      <a id="car9-link" target=”_blank”>
+        <img class="car9-img" src="./assets/images/horizontal/image14.jpg">
+        <div class="bottom-left car9-text"></div>
+      </a>
+    </div>
+
   </div>
 
 
@@ -76,40 +131,43 @@
 <section class="fcards" id="search-results">
   <h3 style="padding-left:30px ;">Top News Results</h3>
   <hr>
+  
+
   <!-- Card 1 -->
   <div class="row" style="padding-left: 50px; padding-right: 50px;">
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c1"><a href="#" id="card1-link">
+      <div class="card c1">
+        <a id="card1-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator card1-img" src="./assets/images/horizontal/image17.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card1-title">Weather</span>
-          <p class='card1-abs'>This is a link</p>
+          <span class="activator grey-text text-darken-4 card1-title"></span>
+          <p class='card1-abs'></p>
         </div></a>
       </div>
  </div>
  <!-- Card 2 -->
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c2"><a href="#" id="card1-link">
+      <div class="card c2"><a id="card2-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activato  card2-img" src="./assets/images/horizontal/image7.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card2-title">Sports</span>
-          <p class='card2-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card2-title"></span>
+          <p class='card2-abs'></p></a>
         </div>
       </div>
     </div>
     <!-- Card 3 -->
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c3"><a href="#" id="card1-link">
+      <div class="card c3"><a id="card3-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator card3-img" src="./assets/images/horizontal/image8.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card3-title">Social</span>
-          <p class='card3-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card3-title"></span>
+          <p class='card3-abs'></p></a>
         </div>
       </div>
     </div>
@@ -117,37 +175,37 @@
   <!-- Card 4 -->
   <div class="row" style="padding-left: 50px; padding-right: 50px;">
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c4"><a href="#" id="card1-link">
+      <div class="card c4"><a id="card4-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="card4-img" src="./assets/images/horizontal/image17.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card4-title">Weather</span>
-          <p class='card4-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card4-title"></span>
+          <p class='card4-abs'></p></a>
         </div>
       </div>
  </div>
  <!-- Card 5 -->
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c5"><a href="#" id="card1-link">
+      <div class="card c5"><a id="card5-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="card5-img" src="./assets/images/horizontal/image7.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card5-title">Sports</span>
-          <p class='card5-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card5-title"></span>
+          <p class='card5-abs'></p></a>
         </div>
       </div>
     </div>
     <!-- Card 6 -->
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c6"><a href="#" id="card1-link">
+      <div class="card c6"><a id="card6-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="card6-img" src="./assets/images/horizontal/image8.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card6-title">Social</span>
-          <p class='card6-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card6-title"></span>
+          <p class='card6-abs'></p></a>
         </div>
       </div>
     </div>
@@ -155,37 +213,37 @@
   <!-- Card 7 -->
   <div class="row" style="padding-left: 50px; padding-right: 50px;">
     <div class="col s12 m12 l4" id="padding: 50px 5px;">
-      <div class="card c7"><a href="#" class="card1-link">
+      <div class="card c7"><a id="card7-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator card7-img" src="./assets/images/horizontal/image17.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card7-title">Weather</span>
-          <p class='card7-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card7-title"></span>
+          <p class='card7-abs'></p></a>
         </div>
       </div>
  </div>
  <!-- Card 8 -->
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c8"><a href="#" id="card1-link">
+      <div class="card c8"><a id="card8-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator card8-img" src="./assets/images/horizontal/image7.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card8-title">Sports</span>
-          <p class='card8-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card8-title"></span>
+          <p class='card8-abs'></p></a>
         </div>
       </div>
     </div>
     <!-- Card 9 -->
     <div class="col s12 m12 l4" style="padding: 50px 5px;">
-      <div class="card c9"><a href="#" id="card1-link">
+      <div class="card c9"><a id="card9-link" target=”_blank”>
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator card9-img" src="./assets/images/horizontal/image8.jpg" width="320" height="213">
         </div>
         <div class="card-content">
-          <span class="activator grey-text text-darken-4 card9-title">Social</span>
-          <p class='card9-abs'>This is a link</p></a>
+          <span class="activator grey-text text-darken-4 card9-title"></span>
+          <p class='card9-abs'></p></a>
         </div>
       </div>
     </div>
