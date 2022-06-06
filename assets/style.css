@@ -68,6 +68,8 @@
         position: absolute;
         bottom: 8px;
         left: 16px;
+        background-color: rgba(0,0,0,.5);
+        padding: auto 5px;
     }
 
     .cell{
@@ -84,6 +86,7 @@
         text-align: center;
         color: white;
         font-size: large;
+        font-weight: bolder;
     }
     .main-carousel a{
         color: #FFF;
@@ -131,3 +134,9 @@
         border-color: #9B0000;
         text-align: center;
     }
+
+    @media screen and (max-width: 768px) {
+        nav {
+          flex-direction: column;
+        }
+      }

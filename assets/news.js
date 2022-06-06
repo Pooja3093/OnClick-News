@@ -1,6 +1,7 @@
 // Select DOM elements
 var categorySearch = document.querySelector('.dropdown');
-var input = document.getElementById("myInput");
+var contactUs = document.querySelector('.modal-close');
+
 
 // Global variables
 var c1 = ['.card1-img', '.card1-title', '.card1-abs', 'card1-link'];
@@ -31,35 +32,9 @@ var j=8;
 // Function handler for dropdown click
 function searchByCategory(event) {
   var category = event.target.textContent;
+  localStorage.setItem('Category', category);
   getFeaturedNews(category);
   
-};
-
-
-
-// Function to fetch news by using user input
-var getNews = function (userInput) {
-  var apiUrl = 'https://api.nytimes.com/svc/topstories/v2/' + userInput + '.json?api-key=A9uhuVjRSzQSlrxkGPPqma0ij4QtNrsO';
-
-  fetch(apiUrl)
-    .then(function (response) {
-      if (response.ok) {
-        response.json().then(function (data) {
-            for(var i = 0; i<=j ; i++){
-              Info[0] = data.results[i].multimedia[0].url;
-              Info[1] = data.results[i].title;
-              Info[2] = data.results[i].abstract;
-              cardIndex = i;
-              displayNews(Info, cardIndex);
-            }
-        });
-      } else {
-        alert('Error: ' + response.statusText);
-      }
-    })
-    .catch(function (error) {
-      alert('Unable to connect to New York Times');
-    });
 };
 
 
@@ -165,7 +140,6 @@ function carouselNews(category){
               Info[0] = data.results[i].multimedia[1].url;
               Info[1] = data.results[i].title;
               Info[3] = data.results[i].url;
-              console.log(Info[3]);
               carIndex = k++;
               displayCarousel(Info, carIndex);
             } else{ j++; }
@@ -229,7 +203,13 @@ function displayCarousel(news, Index) {
 
 // Init function will load on page load
 function init(){
-  getFeaturedNews('Automobiles');
+  var lastSearch = localStorage.getItem('category');
+  if (lastSearch === null){
+    getFeaturedNews('Automobiles');
+  } else{
+    getFeaturedNews(lastSearch);
+  }
+  
   carouselNews('World');
 }
 
@@ -238,15 +218,19 @@ function init(){
 init();
 
 
-// Event listner for keyword search
-// input.addEventListener("keypress", function(event) {
-//   if (event.key === "Enter") {
-//     event.preventDefault();
-//     getNews(input.value);
-//   }
-// });
-
-
 // Event listener for dropdown menu
 categorySearch.addEventListener('click', searchByCategory);
+
+
+// Event listner for contact form. For now the data for contact form will be stored in local storage.
+contactUs.addEventListener('click', function(){
+  var firstName = document.querySelector('#first_name').value;
+  var lastName = document.querySelector('#last_name').value;
+  var email = document.querySelector('#email').value;
+  var msg = document.querySelector('#message').value;
+console.log(firstName);
+  localStorage.setItem('Name', firstName + " " + lastName);
+  localStorage.setItem('Email', email);
+  localStorage.setItem('Message', msg);
+})
 
