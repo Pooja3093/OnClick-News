@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance-News</title>
+    <title>Project-News</title>
 <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 <header class="navbar-main">
     <nav class="nav-fixed">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Finance News</a>
+        <a href="#" class="brand-logo">One World-News</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right">
          <!-- Search box -->
@@ -36,7 +36,19 @@
               <input id="myInput" type="text" placeholder="Serach by keyword">
             </li> -->
             <li><a href="#" onclick="toggleModal();">Home</a></li>
+            <li><a href="#" onclick="toggleModal();">Finance</a></li>
+            <!-- Dropdown -->     
+            <li>
+              <a>Categories▾</a>
+              <ul class="dropdown">
+                <li><a href="#search-results">Business</a></li>
+                <li><a href="#search-results">Fashion</a></li>
+                <li><a href="#search-results">Science</a></li>
+                <li><a href="#search-results">Sports</a></li>
+              </ul>
+            </li>
             <li><a href="#" onclick="toggleModal();">Contact us</a></li>
+            
           </ul>
       </div>
     </nav>
@@ -44,17 +56,25 @@
 
 
 <!-- Carousel Slider -->
-<!-- <h3 style="padding-left:30px; padding-top:70px;">Trending Tickers</h3>
+<h3 style="padding-left:30px; padding-top:70px;">World At A Glance</h3>
 <hr>
-<div class="ticker-display" id="Highlights">
-    
-</div> -->
+<div class="main-carousel" id="Highlights">
+    <div class="cell"><img class="car1-img" src="./assets/images/horizontal/image1.jpg"><div class="bottom-left car1-text">Bottom Left</div></div>
+    <div class="cell"><img class="car2-img" src="./assets/images/horizontal/image5.jpg"><div class="bottom-left car2-text">Bottom Left</div></div>
+    <div class="cell"><img class="car3-img" src="./assets/images/horizontal/image6.jpg"><div class="bottom-left car3-text">Bottom Left</div></div>
+    <div class="cell"><img class="car4-img" src="./assets/images/horizontal/image9.jpg"><div class="bottom-left car4-text">Bottom Left</div></div>
+    <div class="cell"><img class="car5-img" src="./assets/images/horizontal/image10.jpg"><div class="bottom-left car5-text">Bottom Left</div></div>
+    <div class="cell"><img class="car6-img" src="./assets/images/horizontal/image11.jpg"><div class="bottom-left car6-text">Bottom Left</div></div>
+    <div class="cell"><img class="car7-img" src="./assets/images/horizontal/image12.jpg"><div class="bottom-left car7-text">Bottom Left</div></div>
+    <div class="cell"><img class="car8-img" src="./assets/images/horizontal/image13.jpg"><div class="bottom-left car8-text">Bottom Left</div></div>
+    <div class="cell"><img class="car9-img" src="./assets/images/horizontal/image14.jpg"><div class="bottom-left car9-text">Bottom Left</div></div>
+  </div>
 
 
 
 <!-- Cards -->
 <section class="fcards" id="search-results">
-  <h3 style="padding-left:30px ;">Top News</h3>
+  <h3 style="padding-left:30px ;">Top News Results</h3>
   <hr>
   <!-- Card 1 -->
   <div class="row" style="padding-left: 50px; padding-right: 50px;">
@@ -203,5 +223,5 @@ $('.main-carousel').flickity({
 
 </script>
 <!-- JS link -->
-<script src="./assets/finance.js"></script>
+<script src="./assets/news.js"></script>
 </html>

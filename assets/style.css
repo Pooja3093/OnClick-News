@@ -1,0 +1,109 @@
+/* Root */
+    *{
+        margin:0;
+        padding:0;
+    }
+
+
+/* Header */
+
+    .nav-wrapper{
+        background-color: #9B0000;
+        padding-left: 30px;
+    }
+    .topnav .search-container {
+        float: right;
+    }
+
+    #nav-mobile{
+        margin-right: 60px;
+        display:inline; 
+    }
+
+
+
+/* Dropdown */
+
+    ul{
+        list-style:none;
+        background:#9B0000;
+        justify-content: space-around;
+    }
+
+    ul li{
+        display:inline-block;
+        position:relative;
+        padding-left: 30px;
+    }
+
+    ul li a{
+        display:block;
+        color:#FFF;
+        text-decoration:none;
+        text-align:center;
+        font-size:20px;
+    }
+
+            
+    ul li ul.dropdown{
+        width:100%;
+        background:#650101; 
+        position:absolute;
+        z-index:999;
+        display:none;
+    }
+
+    ul li a:hover{
+        background:#c97b7b;
+    }
+            
+    ul li:hover ul.dropdown{
+        display:block;
+    }
+
+
+/* Carousel */
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .cell{
+        width: 5%;
+        height: 350px;
+        margin:0 15px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .main-carousel{
+        padding-top:50px ;
+        position: relative;
+        text-align: center;
+        /* color: white; */
+        font-size: large;
+    }
+
+
+
+/* Card container */
+    .fcards{
+        padding-top: 100px;
+    }
+
+
+/* Image on cards */
+    .activator{
+        width: 30%;
+        height: 100%;
+    }
+
+
+ /* Footer */
+    footer{
+        border-top: 5px;
+        border-color: #9B0000;
+        text-align: center;
+    }
