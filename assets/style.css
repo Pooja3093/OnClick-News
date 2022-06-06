@@ -61,6 +61,15 @@
         display:block;
     }
 
+/* Contact Us button */
+
+    .btn{
+        background-color:#9B0000;
+       }
+   
+   .btn:hover{
+           background-color:#c97b7b;
+          }
 
 /* Carousel */
 
@@ -140,3 +149,4 @@
           flex-direction: column;
         }
       }
+
