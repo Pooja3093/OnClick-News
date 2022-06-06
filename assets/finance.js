@@ -19,6 +19,7 @@ var c9 = ['.card9-img', '.card9-title', 'card9-link'];
 var Info = [];
 var cardIndex;
 var j=8;
+var financeNews;
 
 const options = {
 	method: 'POST',
@@ -47,12 +48,11 @@ fetch(apiUrl, options)
     .then(function (response) {
       if (response.ok) {
         response.json().then(function (data) {
-            var financeNews = data.data.main.stream;
+            financeNews = data.data.main.stream;
             var k = 0;
-            for(let i = 0; i<=j ; i++){
-              
+            console.log(data);
+            for(let i = 0; i<financeNews.length ; i++){
               if(financeNews[i].content.clickThroughUrl === null){
-                j++;
                 continue;
               }
               Info[0] = financeNews[i].content.thumbnail.resolutions[0].url;
